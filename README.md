@@ -59,6 +59,7 @@ Calculates the mean for each column by feature and subject
 
 SCRIPT
 ===================================
+```
 library(plyr)
 #auxiliar function tu sumarize by training
 doTheSummaryze<-function(data,colForMean, colForGrouping){
@@ -149,3 +150,4 @@ for(i in 1:length(sensorsToRead)){
 colnames(final)[colnames(final)=="V2"] <-"feature"
 #write to file
 write.csv(final, file = "./final.txt")
+```
